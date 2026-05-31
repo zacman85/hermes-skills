@@ -18,6 +18,9 @@ Each top-level directory is one skill (a `SKILL.md` plus optional
 | Skill | Description |
 |-------|-------------|
 | `slack-channel-create` | Create a Slack channel end-to-end — provision, invite, set purpose/topic, attach a canvas, wire a per-channel personality prompt in `config.yaml`, and restart the gateway. Reads `SLACK_BOT_TOKEN` + `SLACK_ALLOWED_USERS` from `~/.hermes/.env` at runtime. |
+| `git-auto-commit` | Analyze git changes, group them into atomic commits with conventional commit messages, handle pre-commit hooks safely, and optionally push. |
+| `update-docs` | Keep documentation in sync with code using index-not-duplication discipline — docs point to source of truth, never copy it. Run before commits that touch docs/architecture/config. |
+| `maintain-tests` | Audit and maintain a unit test suite for relevance, coverage, and value — real-functionality-over-mocks philosophy, tiered coverage standards, flaky-test handling. |
 
 ## Notes
 
